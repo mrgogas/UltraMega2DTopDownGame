@@ -1,6 +1,7 @@
 package cz.punga.jecna;
 
 import java.awt.Canvas;
+import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
@@ -37,7 +38,8 @@ public class App extends JFrame {
         while( true ) {
         	g2d = bi.createGraphics();
         	keyboard.poll();
-        	
+        	g2d.setColor(Color.blue);
+        	g2d.drawLine(0,0,50,50);
             graphics = buffer.getDrawGraphics();
             graphics.drawImage( bi, 0, 0, null );
             if( !buffer.contentsLost() )
