@@ -4,11 +4,15 @@ public abstract class Entity {
 	protected String src;
 	private int x;
 	private int y;
+	private int w;
+	private int h;
 	
-	public Entity(int x, int y)
+	public Entity(int x, int y,int w,int h)
 	{
 		this.x = x;
 		this.y = y;
+		this.w = w;
+		this.h = h;
 	}
 	public int getX()
 	{
@@ -25,6 +29,22 @@ public abstract class Entity {
 	public void setY(int y)
 	{
 		this.y = y;
+	}
+	public int getW()
+	{
+		return w;
+	}
+	public void setW(int w)
+	{
+		this.w = w;
+	}
+	public int getH()
+	{
+		return h;
+	}
+	public void seth(int h)
+	{
+		this.h = h;
 	}
 	public abstract void draw();
 	public abstract void colide();
