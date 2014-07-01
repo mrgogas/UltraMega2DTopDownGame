@@ -42,7 +42,7 @@ public abstract class Entity {
 	{
 		return h;
 	}
-	public void seth(int h)
+	public void setH(int h)
 	{
 		this.h = h;
 	}
