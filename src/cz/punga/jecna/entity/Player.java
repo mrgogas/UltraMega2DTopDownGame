@@ -12,7 +12,7 @@ public class Player extends Entity {
 	
 	public void draw()
 	{
-		App.g2d.setColor(Color.white);
+		App.g2d.setColor(Color.cyan);
 		App.g2d.fillRect(this.getX(),this.getY(),this.getW(),this.getH());
 	}
 	

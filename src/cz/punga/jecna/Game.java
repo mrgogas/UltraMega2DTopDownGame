@@ -14,7 +14,7 @@ public class Game {
 			EntityManager.add(player);
 			once = false;
 		}
-		App.g2d.setColor(Color.CYAN);
+		App.g2d.setColor(Color.magenta);
 		App.g2d.fillRect(0,0,App.WIDTH,App.HEIGHT);
 		EntityManager.now();
 	}
