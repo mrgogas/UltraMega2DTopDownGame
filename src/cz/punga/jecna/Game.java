@@ -22,6 +22,7 @@ public class Game {
 		App.g2d.fillRect(0,0,App.WIDTH,App.HEIGHT);
 		EntityManager.now();
 		time++;
+		App.app.setTitle("Time:"+time);
 	}
 	public static long getTime(){
 		return time;
