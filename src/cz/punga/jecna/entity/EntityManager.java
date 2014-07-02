@@ -8,8 +8,4 @@ void add(Entity e)
 {
 	ed.add(e);
 }
-protected int w;
-protected int h;
-
-public ()
 }
