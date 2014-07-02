@@ -2,7 +2,7 @@ package cz.punga.jecna.entity;
 
 public abstract class Entity {
 	protected String src;
-	private boolean colidable;
+	private boolean collidable;
 	private int x;
 	private int y;
 	private int w;
@@ -15,13 +15,21 @@ public abstract class Entity {
 		this.w = w;
 		this.h = h;
 	}
-	public boolean getColid()
+	public Entity(int x, int y,int w,int h,String src)
 	{
-		return colidable;
+		this.x = x;
+		this.y = y;
+		this.w = w;
+		this.h = h;
+		this.src = src;
 	}
-	public void setColid(boolean colidable)
+	public boolean getCollidablity()
 	{
-		this.colidable = colidable;
+		return collidable;
+	}
+	public void setColidabily(boolean colidable)
+	{
+		this.collidable = colidable;
 	}
 	public int getX()
 	{
@@ -56,5 +64,5 @@ public abstract class Entity {
 		this.h = h;
 	}
 	public abstract void draw();
-	public abstract void colide(Entity e);
+	public abstract void collide(Entity e);
 }
