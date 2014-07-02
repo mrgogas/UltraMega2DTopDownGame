@@ -2,6 +2,7 @@ package cz.punga.jecna.entity;
 
 public abstract class Entity {
 	protected String src;
+	private boolean colidable;
 	private int x;
 	private int y;
 	private int w;
@@ -13,6 +14,14 @@ public abstract class Entity {
 		this.y = y;
 		this.w = w;
 		this.h = h;
+	}
+	public boolean getColid()
+	{
+		return colidable;
+	}
+	public void setColid(boolean colidable)
+	{
+		this.colidable = colidable;
 	}
 	public int getX()
 	{
@@ -47,5 +56,5 @@ public abstract class Entity {
 		this.h = h;
 	}
 	public abstract void draw();
-	public abstract void colide();
+	public abstract void colide(Entity e);
 }
