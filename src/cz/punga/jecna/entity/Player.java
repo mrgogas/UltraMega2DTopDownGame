@@ -14,10 +14,10 @@ public class Player extends Entity {
 	
 	public void draw()
 	{
-		if(Game.getTime()%2==0)
+		if(Game.getTime()%16>7)
 			App.g2d.setColor(Color.green);
-		if(Game.getTime()%2==1)
-			App.g2d.setColor(Color.magenta);		
+		if(Game.getTime()%16<7)
+			App.g2d.setColor(Color.magenta);			
 		App.g2d.fillRect(this.getX(),this.getY(),this.getW(),this.getH());
 	}
 	
