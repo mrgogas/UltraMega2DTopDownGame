@@ -1,7 +1,9 @@
 package cz.punga.jecna.entity;
 
 import java.awt.Color;
+
 import cz.punga.jecna.App;
+import cz.punga.jecna.Game;
 
 public class Player extends Entity {
 	
@@ -12,7 +14,10 @@ public class Player extends Entity {
 	
 	public void draw()
 	{
-		App.g2d.setColor(Color.cyan);
+		if(Game.getTime()%2==0)
+			App.g2d.setColor(Color.green);
+		if(Game.getTime()%2==1)
+			App.g2d.setColor(Color.magenta);		
 		App.g2d.fillRect(this.getX(),this.getY(),this.getW(),this.getH());
 	}
 	
