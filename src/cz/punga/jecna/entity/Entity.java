@@ -27,7 +27,7 @@ public abstract class Entity {
 	{
 		return collidable;
 	}
-	public void setColidabily(boolean colidable)
+	public void setCollidabily(boolean colidable)
 	{
 		this.collidable = colidable;
 	}
