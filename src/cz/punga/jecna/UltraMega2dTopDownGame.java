@@ -4,6 +4,7 @@ import java.awt.Insets;
 
 import cz.punga.jecna.App;
 
+@SuppressWarnings("serial")
 public class UltraMega2dTopDownGame{
 	public static void main(String args[]){
 		App app = App.app;

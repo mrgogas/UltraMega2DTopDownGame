@@ -47,6 +47,14 @@ public abstract class Entity {
 	{
 		this.y = y;
 	}
+	public void addX(int x)
+	{
+		setX(getX()+x);
+	}
+	public void addY(int y)
+	{
+		setX(getY()+y);
+	}	
 	public int getW()
 	{
 		return w;
