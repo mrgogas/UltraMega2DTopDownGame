@@ -11,6 +11,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.JFrame;
 
 import cz.punga.jecna.KeyboardInput;
+import cz.punga.jecna.Game;
 
 @SuppressWarnings("serial")
 public class App extends JFrame {

@@ -9,12 +9,13 @@ public class Player extends Entity {
 	{
 		super(x, y, w, h);
 	}
-
+	
 	public void draw()
 	{
 		App.g2d.setColor(Color.white);
 		App.g2d.fillRect(this.getX(),this.getY(),this.getW(),this.getH());
 	}
+	
 	public void collide(Entity e) 
 	{
 		
