@@ -37,6 +37,7 @@ public class App extends JFrame {
         while( true ) {
         	g2d = bi.createGraphics();
         	keyboard.poll();
+        	Game.now();
             graphics = buffer.getDrawGraphics();
             graphics.drawImage( bi, 0, 0, null );
             if( !buffer.contentsLost() )

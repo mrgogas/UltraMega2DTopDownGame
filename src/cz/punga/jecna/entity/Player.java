@@ -1,7 +1,6 @@
 package cz.punga.jecna.entity;
 
 import java.awt.Color;
-
 import cz.punga.jecna.App;
 
 public class Player extends Entity {
@@ -20,5 +19,4 @@ public class Player extends Entity {
 	{
 		
 	}
-	
 }
