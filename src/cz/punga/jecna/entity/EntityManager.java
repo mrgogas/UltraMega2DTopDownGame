@@ -23,6 +23,7 @@ public class EntityManager {
 					Rectangle cEnRect = new Rectangle(cEn.getX(),cEn.getY(),cEn.getW(),cEn.getH());
 					if(cEnRect.intersects(enRect))
 						en.collide(cEn);
+						//nic
 				}
 			}
 		}

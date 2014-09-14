@@ -15,9 +15,9 @@ public class Game {
 			EntityManager.add(player);
 			once = false;
 		}
-		if(Game.getTime()%16>7)
+		if(Game.getTime()%27>13)
 			App.g2d.setColor(Color.green);
-		if(Game.getTime()%16<7)
+		if(Game.getTime()%27<13)
 			App.g2d.setColor(Color.magenta);	
 		App.g2d.fillRect(0,0,App.WIDTH,App.HEIGHT);
 		EntityManager.now();
